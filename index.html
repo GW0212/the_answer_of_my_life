@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>내 인생의 해답 - 랜덤 오라클</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>내 인생의 해답</h1>
+      <p class="subtitle">질문을 입력하고 <b>실행</b>을 누르세요.</p>
+    </header>
+
+    <section class="panel">
+      <div class="input-row">
+        <input id="question" type="text" placeholder="예: 오늘 고백할까? 이직 준비 시작할까?" autocomplete="off" maxlength="120">
+        <button id="askBtn" class="btn primary" aria-label="실행">실행</button>
+      </div>
+      <div class="helper-row">
+        <button id="shuffleBtn" class="chip" title="질문 예시 바꾸기">질문 예시</button>
+        <label class="chip small"><input type="checkbox" id="shakeToggle" checked> 책 흔들기</label>
+      </div>
+    </section>
+
+    <section class="book-wrap">
+      <div class="card" id="card">
+        <div class="answer" id="answer">준비되면 질문을 입력해 주세요.</div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="copyBtn" class="btn ghost">복사</button>
+      <button id="shareBtn" class="btn ghost">공유</button>
+      <button id="againBtn" class="btn">다시 뽑기</button>
+    </section>
+
+    <footer class="footer">
+      <small>※ 재미용입니다. 중요한 결정은 스스로의 기준과 책임감으로! 🙂</small>
+    </footer>
+  </main>
+
+    <script src="answers.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
